@@ -1,0 +1,94 @@
+<HTML>
+<head>
+</head>
+	<BODY>
+	<form method="POST" action="https://script.google.com/macros/s/AKfycbyC-PfAc4MRht5KsXpmGD1kdJNHAgJRylSxLEboyDR3kjkHnTwXhUU9PpEwB1t9PVx7/exec">
+
+
+	
+	</br>Nome:<input name="Nome"        text="Nome"         placeholder="Nome"    value="Joao"   >
+	</br>
+	<label for="Dia">Dia:</label>
+	<input type="date" name="Dia" id="Dia">
+	</br>
+	<label for="Hora">Hora:</label>
+	<input type="time" name="Hora" id="Hora">
+
+<table>
+  <tr>
+    <th>Prod</th>
+    <th>Rech</th>
+    <th>Cobe</th>
+    <th>Unid</th>
+    <th>Quant</th>
+  </tr>
+  <tr>
+    <td>
+		<select name="Produto1">
+			<option value="Nada">--<option>
+			<option value="Rissois">Rissois<option>
+			<option value="Croquetes">Croquetes<option>
+			<option value="Almofadas">Almofadas<option>
+			<option value="Nada">--<option>
+			<option value="Bolo">Bolo<option>
+			<option value="Torta Laranja">Torta Laranja<option>
+			<option value="Torta Molotoff">Torta Molotoff<option>
+			<option value="Tronco de Natal">Tronco de Natal<option>
+			<option value="Macarrons">Macarrons<option>
+		</select>
+	</td>
+    <td><input name="Recheio1"     text="Recheio1"      placeholder="Recheio"    ></td>
+    <td><input name="Cobertura1"   text="Cobertura1"    placeholder="Cobertura"  ></td>
+    <td><input name="Unidade1"     text="Unidade1"      placeholder="Unidade"    ></td>
+    <td><input name="Qt1"          text="Qt1"           placeholder="Qt"         ></td>
+  </tr>
+  <tr>
+    <td><input name="Produto2"  value="Nada"   text="Produto2"      placeholder="Produto"    ></td>
+    <td><input name="Recheio2"     text="Recheio2"      placeholder="Recheio"    ></td>
+    <td><input name="Cobertura2"   text="Cobertura2"    placeholder="Cobertura"  ></td>
+    <td><input name="Unidade2"     text="Unidade2"      placeholder="Unidade"    ></td>
+    <td><input name="Qt2"          text="Qt2"           placeholder="Qt"         ></td>
+  </tr>
+  <tr>
+    <td><input name="Produto3"  value="Nada"   text="Produto3"      placeholder="Produto"    ></td>
+    <td><input name="Recheio3"     text="Recheio3"      placeholder="Recheio"    ></td>
+    <td><input name="Cobertura3"   text="Cobertura3"    placeholder="Cobertura"  ></td>
+    <td><input name="Unidade3"     text="Unidade3"      placeholder="Unidade"    ></td>
+    <td><input name="Qt3"          text="Qt3"           placeholder="Qt"         ></td>
+  </tr>
+  <tr>
+    <td><input name="Produto4"  value="Nada"   text="Produto4"      placeholder="Produto"    ></td>
+    <td><input name="Recheio4"     text="Recheio4"      placeholder="Recheio"    ></td>
+    <td><input name="Cobertura4"   text="Cobertura4"    placeholder="Cobertura"  ></td>
+    <td><input name="Unidade4"     text="Unidade4"      placeholder="Unidade"    ></td>
+    <td><input name="Qt4"          text="Qt4"           placeholder="Qt"         ></td>
+  </tr>
+  <tr>
+    <td><input name="Produto5"  value="Nada"   text="Produto5"      placeholder="Produto"    ></td>
+    <td><input name="Recheio5"     text="Recheio5"      placeholder="Recheio"    ></td>
+    <td><input name="Cobertura5"   text="Cobertura5"    placeholder="Cobertura"  ></td>
+    <td><input name="Unidade5"     text="Unidade5"      placeholder="Unidade"    ></td>
+    <td><input name="Qt5"          text="Qt5"           placeholder="Qt"         ></td>
+  </tr>
+</table>
+
+
+  <button type="submit">Enviar</button>
+</form>
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="glDatePicker.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function()
+        {
+            $('input').glDatePicker();
+        });
+    </script>
+
+</BODY>
+</HTML>
+
