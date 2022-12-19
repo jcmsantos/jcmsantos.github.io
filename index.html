@@ -1,93 +1,347 @@
 <HTML>
 <head>
+	<meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+    <script language="javascript" type="text/javascript">
+    function dynamicdropdown(listindex,op)
+    {
+		document.getElementById("Massa"+op).length = 0;
+		document.getElementById("Massa"+op).style.visibility = 'hidden';
+		document.getElementById("Recheio"+op).length = 0;
+		document.getElementById("Recheio"+op).style.visibility = 'hidden';
+		document.getElementById("Cobertura"+op).length = 0;
+		document.getElementById("Cobertura"+op).style.visibility = 'hidden';
+		document.getElementById("Unidade"+op).length = 0;
+		document.getElementById("Unidade"+op).style.visibility = 'hidden';
+		document.getElementById("Qt"+op).length = 0;
+		document.getElementById("Qt"+op).style.visibility = 'hidden';
+		document.getElementById("lin"+op).style.display = "none";		
+		
+		
+        switch (listindex)
+        {
+        case "Bolo" :
+			document.getElementById("lin"+op).style.display = "block";
+			document.getElementById("Massa"+op).style.visibility = 'visible';
+			document.getElementById("Massa"+op).options[0]=new Option("??????????");
+            document.getElementById("Massa"+op).options[1]=new Option("Chocolate-Pequeno");
+            document.getElementById("Massa"+op).options[2]=new Option("Chocolate-Medio");
+            document.getElementById("Massa"+op).options[3]=new Option("Chocolate-Grande");
+            document.getElementById("Massa"+op).options[4]=new Option("Pao de Lo-Pequeno");
+            document.getElementById("Massa"+op).options[5]=new Option("Pao de Lo-Medio");
+            document.getElementById("Massa"+op).options[6]=new Option("Pao de Lo-Grande");
+
+            document.getElementById("Recheio"+op).style.visibility = 'visible';
+			document.getElementById("Recheio"+op).options[0]=new Option("??????????");
+            document.getElementById("Recheio"+op).options[1]=new Option("Caramelo Salgado");
+            document.getElementById("Recheio"+op).options[2]=new Option("Ferrero Rocher");
+            document.getElementById("Recheio"+op).options[3]=new Option("Doce de Ovos");
+            document.getElementById("Recheio"+op).options[4]=new Option("Fofo de Belas");
+            document.getElementById("Recheio"+op).options[5]=new Option("Mousse de Morango");
+            document.getElementById("Recheio"+op).options[6]=new Option("Mousse de Lima");
+            document.getElementById("Recheio"+op).options[7]=new Option("Limao Curd");
+
+            document.getElementById("Cobertura"+op).style.visibility = 'visible';
+			document.getElementById("Cobertura"+op).options[0]=new Option("??????????");
+            document.getElementById("Cobertura"+op).options[1]=new Option("Chantily");
+            document.getElementById("Cobertura"+op).options[2]=new Option("Chocolate");
+            document.getElementById("Cobertura"+op).options[3]=new Option("Doce Ovos e Amen");
+
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Un");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("1");
+            document.getElementById("Qt"+op).options[2]=new Option("2");
+            document.getElementById("Qt"+op).options[3]=new Option("3");
+
+            break;
+        case "Rissois" :
+			document.getElementById("lin"+op).style.display = "block";
+			document.getElementById("Recheio"+op).style.visibility = 'visible';
+            document.getElementById("Recheio"+op).options[0]=new Option("??????????");
+            document.getElementById("Recheio"+op).options[1]=new Option("Camarao");
+            document.getElementById("Recheio"+op).options[2]=new Option("Carne");
+            document.getElementById("Recheio"+op).options[3]=new Option("Pescada");
+            document.getElementById("Recheio"+op).options[4]=new Option("Legumes");
+            document.getElementById("Recheio"+op).options[5]=new Option("Atum");
+
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Duzia");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("0.5");
+            document.getElementById("Qt"+op).options[2]=new Option("1");
+            document.getElementById("Qt"+op).options[3]=new Option("1.5");
+            document.getElementById("Qt"+op).options[4]=new Option("2");
+            document.getElementById("Qt"+op).options[5]=new Option("2.5");
+            document.getElementById("Qt"+op).options[6]=new Option("3");
+            document.getElementById("Qt"+op).options[7]=new Option("3.5");
+            break;
+        case "Croquetes" :
+			document.getElementById("lin"+op).style.display = "block";
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Duzia");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("0.5");
+            document.getElementById("Qt"+op).options[2]=new Option("1");
+            document.getElementById("Qt"+op).options[3]=new Option("1.5");
+            document.getElementById("Qt"+op).options[4]=new Option("2");
+            document.getElementById("Qt"+op).options[5]=new Option("2.5");
+            document.getElementById("Qt"+op).options[6]=new Option("3");
+            document.getElementById("Qt"+op).options[7]=new Option("3.5");
+            break;
+        case "Almofadas" :
+			document.getElementById("lin"+op).style.display = "block";
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Duzia");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("0.5");
+            document.getElementById("Qt"+op).options[2]=new Option("1");
+            document.getElementById("Qt"+op).options[3]=new Option("1.5");
+            document.getElementById("Qt"+op).options[4]=new Option("2");
+            document.getElementById("Qt"+op).options[5]=new Option("2.5");
+            document.getElementById("Qt"+op).options[6]=new Option("3");
+            document.getElementById("Qt"+op).options[7]=new Option("3.5");
+            break;
+        case "Tronco de Natal" :
+			document.getElementById("lin"+op).style.display = "block";
+            document.getElementById("Recheio"+op).style.visibility = 'visible';
+			document.getElementById("Recheio"+op).options[0]=new Option("??????????");
+            document.getElementById("Recheio"+op).options[1]=new Option("Ferrero Rocher");
+            document.getElementById("Recheio"+op).options[2]=new Option("Doce Ovos");
+
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Un");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("1");
+            document.getElementById("Qt"+op).options[2]=new Option("2");
+            document.getElementById("Qt"+op).options[3]=new Option("3");
+            break;
+        case "Torta Molotoff" :
+			document.getElementById("lin"+op).style.display = "block";
+            document.getElementById("Recheio"+op).style.visibility = 'visible';
+			document.getElementById("Recheio"+op).options[0]=new Option("??????????");
+            document.getElementById("Recheio"+op).options[1]=new Option("Doce Leite Con");
+            document.getElementById("Recheio"+op).options[2]=new Option("Doce Ovos");
+
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Un");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("1");
+            document.getElementById("Qt"+op).options[2]=new Option("2");
+            document.getElementById("Qt"+op).options[3]=new Option("3");
+            break;
+        case "Torta Laranja" :
+			document.getElementById("lin"+op).style.display = "block";
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Un");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("1");
+            document.getElementById("Qt"+op).options[2]=new Option("2");
+            document.getElementById("Qt"+op).options[3]=new Option("3");
+            break;
+        case "Macarrons" :
+			document.getElementById("lin"+op).style.display = "block";
+            document.getElementById("Massa"+op).style.visibility = 'visible';
+			document.getElementById("Massa"+op).options[0]=new Option("??????????");
+            document.getElementById("Massa"+op).options[1]=new Option("Sem cor");
+            document.getElementById("Massa"+op).options[2]=new Option("Vermelhos");
+            document.getElementById("Massa"+op).options[3]=new Option("Verdes");
+            document.getElementById("Massa"+op).options[4]=new Option("Azuis");
+            document.getElementById("Massa"+op).options[5]=new Option("Rosa");
+            document.getElementById("Massa"+op).options[6]=new Option("Outra");
+
+            document.getElementById("Recheio"+op).style.visibility = 'visible';
+			document.getElementById("Recheio"+op).options[0]=new Option("??????????");
+            document.getElementById("Recheio"+op).options[1]=new Option("Caramelo Salgado");
+            document.getElementById("Recheio"+op).options[2]=new Option("Ferrero Rocher");
+            document.getElementById("Recheio"+op).options[3]=new Option("Doce de Ovos");
+            document.getElementById("Recheio"+op).options[4]=new Option("Limao Curd");
+
+            document.getElementById("Unidade"+op).style.visibility = 'visible';
+			document.getElementById("Unidade"+op).options[0]=new Option("Un");
+
+            document.getElementById("Qt"+op).style.visibility = 'visible';
+			document.getElementById("Qt"+op).options[0]=new Option("????");
+            document.getElementById("Qt"+op).options[1]=new Option("1");
+            document.getElementById("Qt"+op).options[2]=new Option("2");
+            document.getElementById("Qt"+op).options[3]=new Option("3");
+            document.getElementById("Qt"+op).options[4]=new Option("4");
+            document.getElementById("Qt"+op).options[5]=new Option("5");
+            document.getElementById("Qt"+op).options[6]=new Option("6");
+            document.getElementById("Qt"+op).options[7]=new Option("7");
+            document.getElementById("Qt"+op).options[8]=new Option("8");
+            document.getElementById("Qt"+op).options[9]=new Option("9");
+            document.getElementById("Qt"+op).options[10]=new Option("10");
+            document.getElementById("Qt"+op).options[11]=new Option("11");
+            document.getElementById("Qt"+op).options[12]=new Option("12");
+            document.getElementById("Qt"+op).options[13]=new Option("13");
+            document.getElementById("Qt"+op).options[14]=new Option("14");
+            document.getElementById("Qt"+op).options[15]=new Option("15");
+            document.getElementById("Qt"+op).options[16]=new Option("16");
+            document.getElementById("Qt"+op).options[17]=new Option("17");
+            document.getElementById("Qt"+op).options[18]=new Option("18");
+            document.getElementById("Qt"+op).options[19]=new Option("19");
+            document.getElementById("Qt"+op).options[20]=new Option("20");
+            document.getElementById("Qt"+op).options[21]=new Option("21");
+            document.getElementById("Qt"+op).options[22]=new Option("22");
+            document.getElementById("Qt"+op).options[23]=new Option("23");
+            document.getElementById("Qt"+op).options[24]=new Option("24");
+
+            break;
+
+        }
+        return true;
+    }
+    </script>
 </head>
 	<BODY>
-	<form method="POST" action="https://script.google.com/macros/s/AKfycbyC-PfAc4MRht5KsXpmGD1kdJNHAgJRylSxLEboyDR3kjkHnTwXhUU9PpEwB1t9PVx7/exec">
+	<form method="POST" action="https://script.google.com/macros/s/AKfycbzvTlcLDs3z5pQTDaDQRUvxLnKDMTcdeDrbB8hxDA2O8Ra2LNCFM6H9D0X0zIAEYNJa/exec">
 
-
-	V2 - E um teste
-	</br>Nome:<input name="Nome"        text="Nome"         placeholder="Nome"    value="Joao"   >
+	</br>
+	<label for="Nome">Nome:</label>
+	<input name="Nome" placeholder="Nome" required>
 	</br>
 	<label for="Dia">Dia:</label>
-	<input type="date" name="Dia" id="Dia">
+	<input type="date" name="Dia" id="Dia" required>
 	</br>
 	<label for="Hora">Hora:</label>
 	<input type="time" name="Hora" id="Hora">
 
-<table>
-  <tr>
-    <th>Prod</th>
-    <th>Rech</th>
-    <th>Cobe</th>
-    <th>Unid</th>
-    <th>Quant</th>
-  </tr>
-  <tr>
-    <td>
-		<select name="Produto1">
-			<option value="Nada">--<option>
-			<option value="Rissois">Rissois<option>
-			<option value="Croquetes">Croquetes<option>
-			<option value="Almofadas">Almofadas<option>
-			<option value="Nada">--<option>
-			<option value="Bolo">Bolo<option>
-			<option value="Torta Laranja">Torta Laranja<option>
-			<option value="Torta Molotoff">Torta Molotoff<option>
-			<option value="Tronco de Natal">Tronco de Natal<option>
-			<option value="Macarrons">Macarrons<option>
+    <ol>
+	<li>
+		<select name="Produto1" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value,1);">
+			<option value="Nada">--</option>
+			<option value="Rissois">Rissois</option>
+			<option value="Croquetes">Croquetes</option>
+			<option value="Almofadas">Almofadas</option>
+			<option value="Nada">--</option>
+			<option value="Bolo">Bolo</option>
+			<option value="Torta Laranja">Torta Laranja</option>
+			<option value="Torta Molotoff">Torta Molotoff</option>
+			<option value="Tronco de Natal">Tronco de Natal</option>
+			<option value="Macarrons">Macarrons</option>
 		</select>
-	</td>
-    <td><input name="Recheio1"     text="Recheio1"      placeholder="Recheio"    ></td>
-    <td><input name="Cobertura1"   text="Cobertura1"    placeholder="Cobertura"  ></td>
-    <td><input name="Unidade1"     text="Unidade1"      placeholder="Unidade"    ></td>
-    <td><input name="Qt1"          text="Qt1"           placeholder="Qt"         ></td>
-  </tr>
-  <tr>
-    <td><input name="Produto2"  value="Nada"   text="Produto2"      placeholder="Produto"    ></td>
-    <td><input name="Recheio2"     text="Recheio2"      placeholder="Recheio"    ></td>
-    <td><input name="Cobertura2"   text="Cobertura2"    placeholder="Cobertura"  ></td>
-    <td><input name="Unidade2"     text="Unidade2"      placeholder="Unidade"    ></td>
-    <td><input name="Qt2"          text="Qt2"           placeholder="Qt"         ></td>
-  </tr>
-  <tr>
-    <td><input name="Produto3"  value="Nada"   text="Produto3"      placeholder="Produto"    ></td>
-    <td><input name="Recheio3"     text="Recheio3"      placeholder="Recheio"    ></td>
-    <td><input name="Cobertura3"   text="Cobertura3"    placeholder="Cobertura"  ></td>
-    <td><input name="Unidade3"     text="Unidade3"      placeholder="Unidade"    ></td>
-    <td><input name="Qt3"          text="Qt3"           placeholder="Qt"         ></td>
-  </tr>
-  <tr>
-    <td><input name="Produto4"  value="Nada"   text="Produto4"      placeholder="Produto"    ></td>
-    <td><input name="Recheio4"     text="Recheio4"      placeholder="Recheio"    ></td>
-    <td><input name="Cobertura4"   text="Cobertura4"    placeholder="Cobertura"  ></td>
-    <td><input name="Unidade4"     text="Unidade4"      placeholder="Unidade"    ></td>
-    <td><input name="Qt4"          text="Qt4"           placeholder="Qt"         ></td>
-  </tr>
-  <tr>
-    <td><input name="Produto5"  value="Nada"   text="Produto5"      placeholder="Produto"    ></td>
-    <td><input name="Recheio5"     text="Recheio5"      placeholder="Recheio"    ></td>
-    <td><input name="Cobertura5"   text="Cobertura5"    placeholder="Cobertura"  ></td>
-    <td><input name="Unidade5"     text="Unidade5"      placeholder="Unidade"    ></td>
-    <td><input name="Qt5"          text="Qt5"           placeholder="Qt"         ></td>
-  </tr>
-</table>
+		<div id="lin1" style="display: none;">
+		<ul>
+		<li>    Massa:<select name="Massa1"     id="Massa1"     ></select></li>
+		<li>  Recheio:<select name="Recheio1"   id="Recheio1"   ></select></li>
+		<li>Cobertura:<select name="Cobertura1" id="Cobertura1" ></select></li>
+		<li>       Un:<select name="Unidade1"   id="Unidade1"   ></select></li>
+		<li>       Qt:<select name="Qt1"        id="Qt1"        ></select></li>
+		</ul>
+		</div>
+	</li>
+    <li>
+		<select name="Produto2" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value,2);">
+			<option value="Nada">--</option>
+			<option value="Rissois">Rissois</option>
+			<option value="Croquetes">Croquetes</option>
+			<option value="Almofadas">Almofadas</option>
+			<option value="Nada">--</option>
+			<option value="Bolo">Bolo</option>
+			<option value="Torta Laranja">Torta Laranja</option>
+			<option value="Torta Molotoff">Torta Molotoff</option>
+			<option value="Tronco de Natal">Tronco de Natal</option>
+			<option value="Macarrons">Macarrons</option>
+		</select>
+		<div id="lin2" style="display: none;">
+		<ul>
+		<li>    Massa:<select name=    "Massa2"     id="Massa2" ></select></li>
+		<li>  Recheio:<select name=  "Recheio2"   id="Recheio2" ></select></li>
+		<li>Cobertura:<select name="Cobertura2" id="Cobertura2" ></select></li>
+		<li>       Un:<select name=  "Unidade2"   id="Unidade2" ></select></li>
+		<li>       Qt:<select name=       "Qt2"        id="Qt2" ></select></li>
+		</ul>
+		</div>
+	</li>
+    <li>
+		<select name="Produto3" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value,3);">
+			<option value="Nada">--</option>
+			<option value="Rissois">Rissois</option>
+			<option value="Croquetes">Croquetes</option>
+			<option value="Almofadas">Almofadas</option>
+			<option value="Nada">--</option>
+			<option value="Bolo">Bolo</option>
+			<option value="Torta Laranja">Torta Laranja</option>
+			<option value="Torta Molotoff">Torta Molotoff</option>
+			<option value="Tronco de Natal">Tronco de Natal</option>
+			<option value="Macarrons">Macarrons</option>
+		</select>
+		<div id="lin3" style="display: none;">
+		<ul>
+		<li>    Massa:<select name=    "Massa3"     id="Massa3" ></select></li>
+		<li>  Recheio:<select name=  "Recheio3"   id="Recheio3" ></select></li>
+		<li>Cobertura:<select name="Cobertura3" id="Cobertura3" ></select></li>
+		<li>       Un:<select name=  "Unidade3"   id="Unidade3" ></select></li>
+		<li>       Qt:<select name=       "Qt3"        id="Qt3" ></select></li>
+		</ul>
+		</div>
+	</li>
+    <li>
+		<select name="Produto4" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value,4);">
+			<option value="Nada">--</option>
+			<option value="Rissois">Rissois</option>
+			<option value="Croquetes">Croquetes</option>
+			<option value="Almofadas">Almofadas</option>
+			<option value="Nada">--</option>
+			<option value="Bolo">Bolo</option>
+			<option value="Torta Laranja">Torta Laranja</option>
+			<option value="Torta Molotoff">Torta Molotoff</option>
+			<option value="Tronco de Natal">Tronco de Natal</option>
+			<option value="Macarrons">Macarrons</option>
+		</select>
+		<div id="lin4" style="display: none;">
+		<ul>
+		<li>    Massa:<select name=    "Massa4"     id="Massa4" ></select></li>
+		<li>  Recheio:<select name=  "Recheio4"   id="Recheio4" ></select></li>
+		<li>Cobertura:<select name="Cobertura4" id="Cobertura4" ></select></li>
+		<li>       Un:<select name=  "Unidade4"   id="Unidade4" ></select></li>
+		<li>       Qt:<select name=       "Qt4"        id="Qt4" ></select></li>
+		</ul>
+		</div>
+	</li>
+    <li>
+		<select name="Produto5" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value,5);">
+			<option value="Nada">--</option>
+			<option value="Rissois">Rissois</option>
+			<option value="Croquetes">Croquetes</option>
+			<option value="Almofadas">Almofadas</option>
+			<option value="Nada">--</option>
+			<option value="Bolo">Bolo</option>
+			<option value="Torta Laranja">Torta Laranja</option>
+			<option value="Torta Molotoff">Torta Molotoff</option>
+			<option value="Tronco de Natal">Tronco de Natal</option>
+			<option value="Macarrons">Macarrons</option>
+		</select>
+		<div id="lin5" style="display: none;">
+		<ul>
+		<li>    Massa:<select name=    "Massa5"     id="Massa5" ></select></li>
+		<li>  Recheio:<select name=  "Recheio5"   id="Recheio5" ></select></li>
+		<li>Cobertura:<select name="Cobertura5" id="Cobertura5" ></select></li>
+		<li>       Un:<select name=  "Unidade5"   id="Unidade5" ></select></li>
+		<li>       Qt:<select name=       "Qt5"        id="Qt5" ></select></li>
+		</ul>
+		</div>
+	</li>
+	</ol>
 
 
   <button type="submit">Enviar</button>
 </form>
 
-
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="glDatePicker.min.js"></script>
-
-    <script type="text/javascript">
-        $(window).load(function()
-        {
-            $('input').glDatePicker();
-        });
-    </script>
 
 </BODY>
 </HTML>
